@@ -18,10 +18,10 @@
 
 .projetos__title {
     color: white;
-    font-size: 3.2rem;
+    font-size: 2.8rem; /* reduzido de 3.2rem */
     font-weight: bold;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .projetos__carrossel {
@@ -30,7 +30,7 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
-    hight: auto;
+    height: auto;
 }
 
 .projeto__card {
@@ -73,31 +73,36 @@
 }
 
 .projeto__nome {
-    font-size: 2.8rem;
+    font-size: 2.2rem; /* reduzido de 2.8rem */
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: white;
 }
 
 .projeto__descricao {
-    font-size: 2rem;
-    line-height: 1.6;
+    font-size: 1.6rem; /* reduzido de 2rem */
+    line-height: 1.5;
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     flex-grow: 1;
 }
 
 .projeto__github {
     position: absolute;
-    bottom: 5rem;
-    right: 5rem;
-    width: 20px;
-    height: 20px;
+    bottom: 3.5rem; /* ajustado para acompanhar altura reduzida */
+    right: 3.5rem;
+    width: 50px; /* reduzido de 20px */
+    height: 5px; /* reduzido de 20px */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.github__img{
+    width: 100%;
+    height: 100%;
 }
 
 .projeto__github:hover {
@@ -106,7 +111,7 @@
 
 .carrossel__navigation {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -132,6 +137,8 @@
 
 .projeto__img {
     width: 100%;
-    height: 35vw;
+    height: 28vw; /* reduzido de 35vw para diminuir altura */
+    max-height: 420px; /* limite superior para telas grandes */
+    min-height: 260px; /* limite inferior para telas pequenas */
     object-fit: cover;
 }

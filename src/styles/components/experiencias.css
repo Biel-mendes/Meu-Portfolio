@@ -56,17 +56,17 @@
 
 .experiencia__title{
 	margin-bottom: 62px;
-	font-size: 3.2rem;
+	font-size: 2.8rem;
 	font-weight: bold;
 }
 
 .experiencia__empresa{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .experiencia__descricao{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     font-weight: 300;
 }

@@ -35,7 +35,7 @@ const Projetos = () => {
                             </p>
                             <div className="projeto__github">
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={github} alt="GitHub" />
+                                    <img src={github} alt="GitHub" className='github__img' />
                                 </a>
                             </div>
                         </div>
