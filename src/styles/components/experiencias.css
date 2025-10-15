@@ -1,0 +1,85 @@
+.carrossel__animacao {
+    transition: transform 0.35s cubic-bezier(.77,0,.18,1), opacity 0.35s cubic-bezier(.77,0,.18,1);
+}
+.carrossel__animacao.slide-left {
+    transform: translateX(80px);
+    opacity: 0;
+}
+.carrossel__animacao.slide-right {
+    transform: translateX(-80px);
+    opacity: 0;
+}
+.carrossel__animacao:not(.slide-left):not(.slide-right) {
+    transform: translateX(0);
+    opacity: 1;
+}
+.experiencia {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.experiencia__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrossel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.experiencia__card{
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+    padding: 1rem 2rem;
+    gap: 2rem;
+}
+
+.experiencia__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    height: 80%;
+    padding: 1rem;
+}
+
+.experiencia__title{
+	margin-bottom: 62px;
+	font-size: 3.2rem;
+	font-weight: bold;
+}
+
+.experiencia__empresa{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.experiencia__descricao{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.experiencia__card img{
+    width: 30vw;
+}
+
+.carrossel__seta{
+    background: none;
+    border: none;
+    font-size: 6rem;
+    cursor: pointer;
+    color: #ffffff2c;
+    transition: color 0.3s;
+}

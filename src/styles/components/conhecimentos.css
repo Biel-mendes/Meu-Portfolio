@@ -1,0 +1,49 @@
+
+.conhe__niveis {
+	display: flex;
+	gap: 8px;
+	margin-top: 8px;
+}
+
+.conhe__nivel {
+	width: 40px;
+	height: 5px;
+	background: #eee;
+	border-radius: 4px;
+	transition: background 0.3s;
+}
+
+.conhe__nivel.preenchido {
+	background: #ff4d1f;
+}
+
+.conhe_item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    gap: 8px;
+	margin: 24px 0;
+}
+
+.conhe_item img {
+	width: 70px;
+	margin-bottom: 8px;
+}
+
+.conhe__itens {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 60px 48px;
+	justify-items: center;
+}
+
+.conhe__container h2 {
+	text-align: center;
+	margin-bottom: 62px;
+	font-size: 3.2rem;
+	font-weight: bold;
+}
+
+.conhe__container {
+    padding: 80px 0;
+}
